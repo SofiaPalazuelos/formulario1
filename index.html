@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new project</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <h4>Hello World</h4>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <form class="FormDatos" action="resultado.html" method="post" id="Formulario">
+    <h2 class="Titulo">Formulario</h2> <br>
+
+    <label for="Nombre"> Nombre: </label>
+    <input class="Input" type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+    <br><br>
+
+    <label for="Email"> Email: </label>
+    <input class="Input" type="email" name="email" id="email" placeholder="correo@empresa.com">
+    <br><br>
+
+    Asunto:<textarea name="Asunto" id="" cols="30" rows="10"></textarea><br><br>
+
+    <label for="pregunta"> ¿Como nos ha conocido? </label> <br>
+    <label for="opcion1">Un amigo</label>
+    <input class="Input" type="checkbox" name="amigo" id="amigo" >
+    <label for="opcion2">Googlenado</label>
+    <input class="Input" type="checkbox" name="Googlenado" id="Googlenado" >
+    <label for="opcion2">Buzoneo</label>
+    <input class="Input" type="checkbox" name="Buzoneo" id="Buzoneo" >
+    <label for="opcion2">Otros</label>
+    <input class="Input" type="checkbox" name="Otros" id="Otros" >
+
+    <br><br>
+
+    Escribe tu mensaje:<textarea name="mensaje" id="" cols="30" rows="10"></textarea><br><br>
+
+    <input class="input" type="checkbox" name="aviso" id="aviso"> He leido y acepto el aviso legal y la politica de privacidad.
+</form>
 
 </body>
 </html>
